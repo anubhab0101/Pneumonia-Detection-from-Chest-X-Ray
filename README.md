@@ -90,9 +90,9 @@ Please download the dataset manually from Kaggle and place it in the designated 
 Pneumonia-Detection-from-Chest-X-Ray/
 │
 ├── dataset/                   # Place dataset here
-├── pp.py                      # Main training script
+├── train_model.py             # Main training script
 ├── Model.ipynb                # Jupyter notebook with complete workflow
-├── train_model.py             # Script for prediction on new images
+├── pp.py                      # Script for prediction on new images
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project documentation
 ```
