@@ -113,4 +113,4 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 **Note:**  
 This project is for academic/research purposes only and not intended for clinical use.
-if any one want to try this here(https://anubhab0101-pneumonia-detection-from-chest-x-ray-pp-qdevtn.streamlit.app/ #here) link to try
+if any one want to try this [here](https://anubhab0101-pneumonia-detection-from-chest-x-ray-pp-qdevtn.streamlit.app/) link to try
