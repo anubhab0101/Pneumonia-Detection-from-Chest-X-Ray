@@ -1,0 +1,11 @@
+tensorflow>=2.6
+keras>=2.6
+numpy
+matplotlib
+pandas
+scikit-learn
+opencv-python
+scipy
+pillow
+streamlit
+seaborn
