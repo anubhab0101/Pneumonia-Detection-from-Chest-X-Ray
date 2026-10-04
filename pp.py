@@ -15,7 +15,7 @@ else:
     st.error("Model file not found. Please ensure 'best_model.h5' is in the correct directory.")
     model = None
 
-IMG_SIZE = (150, 150)
+IMG_SIZE = (224, 224)
 
 st.title("Pneumonia Detection from Chest X-Ray")
 st.write("Upload a chest X-ray image to detect if it's NORMAL or PNEUMONIA.")
@@ -29,10 +29,11 @@ if uploaded_file is not None and model is not None:
 
     # Preprocess the image
     img = image.resize(IMG_SIZE)
-    img_array = np.array(img) / 255.0 
+    img_array = np.array(img)
     if img_array.shape[-1] == 4:
         img_array = img_array[..., :3]  
     img_array = np.expand_dims(img_array, axis=0) 
+    img_array = tf.keras.applications.mobilenet_v2.preprocess_input(img_array)
 
     prediction = model.predict(img_array)[0][0]
 
